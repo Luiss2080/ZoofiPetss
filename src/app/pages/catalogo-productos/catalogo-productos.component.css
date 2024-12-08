@@ -1,0 +1,400 @@
+.logoPequeño {
+    width: 50px; /* Ajusta esto según el tamaño deseado para tu logo */
+
+    height: auto; /* la altura se ajustará automáticamente logo.*/
+
+    vertical-align: middle; /* Alinea el logo verticalmente con el texto */
+}
+
+
+
+
+/* CSS para la BIENVENIDA A LA PAGINA */
+.bienvenida-section {
+    background-color: #9a55f4; /* Color de fondo azul */
+    color: white; /* Texto en color blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
+  }
+  
+  .titulo-grande {
+    font-size: 36px; /* Tamaño de fuente grande para h1 */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el título */
+  }
+  
+  .titulo-mediano {
+    font-size: 24px; /* Tamaño de fuente mediano para h2 */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el título */
+  }
+  
+  .titulo-pequeno {
+    font-size: 18px; /* Tamaño de fuente pequeño para h3 */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el título */
+  }
+  
+  /* Estilo para resaltar el título al pasar el cursor sobre él */
+  .titulo-grande:hover, .titulo-mediano:hover, .titulo-pequeno:hover {
+    text-decoration: underline; /* Subrayar el texto al pasar el cursor sobre el título */
+  }
+  
+  
+
+/* CSS para la seccion de introduccion de servicios */
+  .servicios-section {
+    background: linear-gradient(to bottom, #ffffff 0%, #b3d9ff 100%); /* Fondo blanco que transiciona a azul claro */
+    text-align: center; /* Alineación del texto al centro */
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  .servicios-section h1 {
+    color: #000066; /* Color azul oscuro para 'Nuestros servicios' */
+    margin-bottom: 0.5em; /* Espacio debajo del título */
+  }
+  
+  .servicios-section h2 {
+    color: #008080; /* Color teal para 'Su salud nos importa' */
+    margin-bottom: 1em; /* Espacio debajo del subtítulo */
+  }
+  
+  .servicios-section p {
+    color: #000066; /* Color azul oscuro para el párrafo */
+    font-size: 19px; /* Tamaño inicial de la fuente */
+  }
+  
+
+
+
+  /* CSS para la seccion de introduccion de productos */
+  .productos-section {
+    background: linear-gradient(to bottom, #ffffff 0%, #b3d9ff 100%); /* Fondo blanco que transiciona a azul claro */
+    text-align: center; /* Alineación del texto al centro */
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  .productos-section h1 {
+    color: #000066; /* Color azul oscuro para 'Nuestros servicios' */
+    margin-bottom: 0.5em; /* Espacio debajo del título */
+  }
+  
+  .productos-section h2 {
+    color: #008080; /* Color teal para 'Su salud nos importa' */
+    margin-bottom: 1em; /* Espacio debajo del subtítulo */
+  }
+  
+  .productos-section p {
+    color: #000066; /* Color azul oscuro para el párrafo */
+  }
+  
+
+
+
+    /* CSS para la reserva de compras */
+    .compras-section {
+        background: linear-gradient(to bottom, #ffffff 0%, #b3d9ff 100%); /* Fondo blanco que transiciona a azul claro */
+        text-align: center; /* Alineación del texto al centro */
+        padding: 20px; /* Espaciado interno */
+      }
+      
+      .compras-section h1 {
+        color: #000066; /* Color azul oscuro para 'Nuestros servicios' */
+        margin-bottom: 0.5em; /* Espacio debajo del título */
+      }
+      
+      .compras-section h2 {
+        color: #008080; /* Color teal para 'Su salud nos importa' */
+        margin-bottom: 1em; /* Espacio debajo del subtítulo */
+      }
+      
+      .compras-section p {
+        color: #000066; /* Color azul oscuro para el párrafo */
+      }
+
+      
+
+/* CSS para la sección de imágenes DE LOS ANIMALITOS */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+/* Estilos para la seccion de imagenes */
+.movie-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom right, #ffffff);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el encabezado */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffc107;
+}
+
+.header h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.header-image {
+    margin-top: 20px;
+}
+
+.header-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Estilos para las imagenes de animalitos */
+.movie-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilos para cada tarjeta */
+.movie-card {
+    position: relative;
+    width: 200px; /* Ancho de cada tarjeta */
+    height: 300px; /* Altura de cada tarjeta */
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out; /* Animación de transformación */
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Estilos para la superposición de texto (card-overlay) */
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 1; /* Mostrar siempre la superposición */
+    text-align: center; /* Centrar el contenido */
+}
+
+.card-overlay .card-title {
+    font-size: 18px;
+    color: #f2f2f2; /* Color del título */
+    margin-bottom: 5px;
+    text-align: center; /* Centrar el título */
+}
+/* Estilos para la descripción dentro de la superposición de texto (card-overlay) */
+.card-overlay .card-description {
+    font-size: 14px;
+    color: #f2f2f2; /* Cambio de color para la descripción */
+}
+
+
+
+/*ESTRUCTURA DE MENSAJE Y FORMULARIO*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: auto; /* Cambiado a auto para ajustar la altura al contenido */
+}
+
+.left-section {
+    flex: 1;
+    background: linear-gradient(to bottom right, #000000, #404040);
+    color: #ffffff;
+    padding: 90px 40px;
+    box-sizing: border-box;
+    text-align: center; /* Alineación del texto al centro */
+
+}
+
+.left-section h2 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.left-section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.right-section {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex; /* Añadido para organizar los elementos en columna */
+    flex-direction: column; /* Añadido para organizar los elementos en columna */
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* CSS para la sección de información DE HORARIOS */
+.info-section {
+    background: linear-gradient(to bottom, #ffffff 0%, #b3d9ff 100%); /* Fondo blanco que transiciona a azul claro */
+    text-align: center; /* Alineación del texto al centro */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Uso de Flexbox para alinear elementos */
+    justify-content: center; /* Centrado horizontal de los elementos */
+}
+
+.info-section > div {
+    flex: 1; /* Flexibilidad para que cada div ocupe el mismo espacio */
+    margin: 0 10px; /* Margen a los lados para separar los divs */
+    color: #000066; /* Color azul oscuro para el texto */
+}
+
+.info-section h1 {
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-size: 1.2em; /* Tamaño de fuente para los títulos */
+    margin-bottom: 0.5em; /* Espacio debajo del título */
+}
+
+.info-section p {
+    font-size: 0.9em; /* Tamaño de fuente para el texto */
+    margin-bottom: 1em; /* Espacio debajo del párrafo */
+}
+
+/* Añadir una clase para el último elemento para evitar el margen derecho */
+.info-section > div:last-child {
+    margin-right: 0;
+}
+
+
+
+
+
+/*REDES SOCIALES*/
+.social-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.social-section h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px;
+    max-width: 120px;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-card:hover {
+    transform: scale(1.05);
+}
+
+.social-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.social-card-body {
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.social-card-body h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-card-body p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
