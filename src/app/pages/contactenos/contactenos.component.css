@@ -1,36 +1,161 @@
 
-
-/* CSS para la seccion de introduccion de servicios */
-.servicios-section {
-    background: linear-gradient(to bottom, #ffffff 0%, #b3d9ff 100%); /* Fondo blanco que transiciona a azul claro */
-    text-align: center; /* Alineación del texto al centro */
-    padding: 20px; /* Espaciado interno */
-  }
-
-  .servicios-section h1 {
-    color: #000066; /* Color azul oscuro para 'Nuestros servicios' */
-    margin-bottom: 0.5em; /* Espacio debajo del título */
-  }
-  
-  .servicios-section h2 {
-    color: #008080; /* Color teal para 'Su salud nos importa' */
-    margin-bottom: 1em; /* Espacio debajo del subtítulo */
-  }
-  
-  .servicios-section p {
-    color: #000066; /* Color azul oscuro para el párrafo */
-    font-size: 19px; /* Tamaño inicial de la fuente */
-  }
-
-
-  
-/* CSS para la sección de imágenes */
-
+/* CSS DE INTRODUCCIÓN */
 /* Estilos generales */
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: white;
+.blog-section {
+    text-align: left;
+    padding: 20px;
 }
+
+/* Título del blog */
+.blog-title {
+    font-size: 36px; /* Tamaño de la letra */
+    font-weight: bold;
+    color: #232323; /* Color negro grisáceo */
+    font-family: 'Montserrat', sans-serif; /* Fuente exacta similar */
+    margin-bottom: 10px;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.blog-title:hover {
+    transform: scale(1.1); /* Aumenta el tamaño */
+    color: #0000ff; /* Cambia el color del texto al azul */
+}
+
+.blog-title::after {
+    content: '';
+    display: block;
+    width: 600px; /* Longitud de la línea */
+    height: 4px; /* Grosor de la línea */
+    background: linear-gradient(to right, #0000ff, #800080); /* Gradiente azul-morado */
+    margin-left: 400px; /* Parámetro para mover LA LINEA de izquierda a derecha */
+    margin-top: 5px;
+    transition: transform 0.3s ease; /* Transición suave para la línea */
+}
+
+.blog-title:hover::after {
+    transform: scale(1.1); /* Aumenta el tamaño de la línea */
+}
+
+/* Descripción del blog */
+.blog-description {
+    font-size: 24px; /* Tamaño exacto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #0F2C5C; /* Azul profundo */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* CSS DEL GPS */
+.gps-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .gps-info {
+    margin-left: 30px;
+  }
+
+  .map-container {
+    width: 1500px;
+    height: 900px;
+    margin-top: 550px;
+    margin-left: 80px;
+  }
+
+
+
+
+
+/* Contenedor DE 4 TARJETAS */
+.beneficios-container {
+    display: flex; /* Diseño en fila */
+    justify-content: space-between; /* Espaciado entre bloques */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre los bloques */
+    background-color: #f2fce9; /* Fondo verde claro */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Ocupa toda la página horizontalmente */
+    margin: 0 auto; /* Centrado */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+/* Estilo general de cada bloque */
+.beneficio {
+    display: flex;
+    align-items: center; /* Alinea verticalmente icono y texto */
+    gap: 10px; /* Espacio entre icono y texto */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    flex: 1; /* Bloques ajustables proporcionalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    cursor: pointer; /* Indica interactividad */
+}
+
+.beneficio:hover {
+    transform: translateY(-10px); /* Levanta el bloque */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+/* Iconos */
+.icono {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Tamaño reducido del círculo */
+    height: 80px;
+    overflow: hidden; /* Recorte dentro del círculo */
+}
+
+.icono img {
+    width: 80%; /* Imagen más pequeña dentro del círculo */
+    height: 80%;
+    object-fit: cover; /* Recorte proporcional para cubrir el círculo */
+}
+
+/* Texto */
+.texto {
+    text-align: left; /* Texto alineado a la izquierda */
+}
+
+.texto h3 {
+    margin: 0 0 5px;
+    font-size: 1em; /* Tamaño ajustado */
+    font-weight: 700; /* Negrita */
+    color: #2d2d2d; /* Negro/gris oscuro */
+}
+
+.texto p {
+    margin: 0;
+    font-size: 0.9em; /* Tamaño ajustado */
+    color: #666; /* Gris claro */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Estilos para la seccion de imagenes */
 .movie-section {
@@ -136,40 +261,244 @@ body {
 
 
 
+ /* FORMULARIO DE DUDASSSSSSSSSSSSSS */
+ /* Animación al acercar el mouse */
+ .btn-animate {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    font-size: 1rem;
+  }
+
+  .btn-animate:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Botones morados */
+  .btn-purple {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+  }
+
+  .btn-purple:hover {
+    background-color: #7b1fa2;
+  }
+
+  /* Personalización de tamaño de botones */
+  .btn-custom {
+    width: var(--button-width, 300px); /* Ancho del botón */
+    height: var(--button-height, 50px); /* Altura del botón */
+  }
+
+  /* Personalización del text box */
+  .text-box-custom {
+    width: var(--text-box-width, 100%); /* Ancho del campo de texto */
+    max-width: 1200px; /* Limitar ancho máximo */
+    transition: width 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin-left: var(--text-box-margin-left, 30px); /* Posición horizontal inicial */
+  }
+
+  .text-box-custom:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: var(--text-box-focus-width, 100%); /* Ancho al enfoque */
+  }
+
+  /* Ajustes individuales de posición */
+  .btn-enviar {
+    margin-left: var(--btn-enviar-margin-left, 30px); /* Posición horizontal del botón Enviar */
+    margin-top: var(--btn-enviar-margin-top, -13px); /* Posición vertical del botón Enviar */
+  }
+
+  .btn-reset {
+    margin-left: var(--btn-reset-margin-left, 10px); /* Posición horizontal del botón Restablecer */
+    margin-top: var(--btn-reset-margin-top, -13px); /* Posición vertical del botón Restablecer */
+  }
+
+  .separator-custom {
+    margin-left: 10px; /* Espacio a la izquierda del separador */
+    margin-right: 10px; /* Espacio a la derecha del separador */
+  }
+
+  /* Espacio general entre elementos */
+  .hstack {
+    gap: var(--element-gap, 30px); /* Espacio general entre los elementos */
+  }
 
 
-  
 
-/* CSS para la sección de información DE HORARIOS */
-.info-section {
-    background: linear-gradient(to bottom, #ffffff 0%, #b3d9ff 100%); /* Fondo blanco que transiciona a azul claro */
-    text-align: center; /* Alineación del texto al centro */
+
+
+
+
+
+
+
+
+
+
+/* Estilo para la tarjeta */
+.card {
+    background-color: #f3e5f5; /* Fondo suave morado */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: 20px;
+    display: flex; /* Usamos flexbox para colocar imagen y texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: all 0.3s ease; /* Animación de transición */
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
+    transform: translateY(-10px); /* Elevación de la tarjeta */
+}
+
+.card-header {
+    background-color: #6a1b9a; /* Color morado oscuro */
+    height: 30px; /* Altura de la franja */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados arriba */
+}
+
+.card-body {
+    padding: 20px; /* Espaciado dentro del cuerpo de la tarjeta */
+    color: #4a148c; /* Color de texto morado oscuro */
+    width: 100%; /* Toma el 100% del ancho de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el texto dentro de su área */
+    text-align: justify; /* Justifica el texto */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Título de la cita, tamaño mayor */
+    color: #6a1b9a; /* Color morado */
+    text-align: center; /* Centramos el título */
+    font-weight: bold;
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+.blockquote-footer {
+    font-size: 0.9rem; /* Tamaño más pequeño para el pie de la cita */
+    color: #6a1b9a; /* Color morado oscuro */
+    margin-top: 20px; /* Espacio más grande entre la cita y el autor */
+    text-align: right; /* Alineamos a la derecha el autor */
+}
+
+/* Estilo para la imagen del autor */
+.author-img {
+    width: 100%; /* La imagen ocupa el 100% del ancho de su contenedor */
+    height: 100%; /* La imagen ocupa toda la altura de la tarjeta */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Animación para la imagen */
+}
+
+/* Efecto hover para la imagen */
+.card-right:hover .author-img {
+    transform: scale(1.05); /* Aumento de la imagen al pasar el mouse */
+}
+
+/* Contenedor de la imagen y el texto */
+.card-content {
+    display: flex;
+    width: 100%; /* Toma el 100% del ancho disponible */
+}
+
+.card-left {
+    width: 115%; /* El texto ocupa el 60% */
+    padding-left: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.card-right {
+    width: 40%; /* La imagen ocupa el 40% */
+    height: 100%; /* La imagen ocupa toda la altura */
+}
+
+
+
+
+
+
+
+/* Contenedor DE LOS DATOS FINALES */
+.informacion-container {
+    display: flex; /* Diseño en fila */
+    justify-content: space-between; /* Espaciado uniforme entre bloques */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre bloques */
+    background-color: #f2fce9; /* Fondo verde claro */
     padding: 20px; /* Espaciado interno */
-    display: flex; /* Uso de Flexbox para alinear elementos */
-    justify-content: center; /* Centrado horizontal de los elementos */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100%; /* Ocupa toda la fila horizontal */
+    margin: 0 auto; /* Centra el contenedor */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
 }
 
-.info-section > div {
-    flex: 1; /* Flexibilidad para que cada div ocupe el mismo espacio */
-    margin: 0 10px; /* Margen a los lados para separar los divs */
-    color: #000066; /* Color azul oscuro para el texto */
+/* Bloques individuales */
+.info-bloque {
+    display: flex;
+    align-items: center; /* Alineación vertical centrada */
+    gap: 10px; /* Espacio entre icono y texto */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    flex: 1; /* Bloques ajustables proporcionalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    cursor: pointer; /* Indica interactividad */
 }
 
-.info-section h1 {
-    text-transform: uppercase; /* Texto en mayúsculas */
-    font-size: 1.2em; /* Tamaño de fuente para los títulos */
-    margin-bottom: 0.5em; /* Espacio debajo del título */
+.info-bloque:hover {
+    transform: translateY(-10px); /* Efecto de levantamiento */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
-.info-section p {
-    font-size: 0.9em; /* Tamaño de fuente para el texto */
-    margin-bottom: 1em; /* Espacio debajo del párrafo */
+/* Iconos */
+.info-icono {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Tamaño del círculo */
+    height: 80px;
+    overflow: hidden; /* Recorte dentro del círculo */
 }
 
-/* Añadir una clase para el último elemento para evitar el margen derecho */
-.info-section > div:last-child {
-    margin-right: 0;
+.info-icono img {
+    width: 80%; /* Imagen más pequeña */
+    height: 80%;
+    object-fit: cover; /* Ajuste proporcional */
 }
+
+/* Texto */
+.info-texto {
+    text-align: left; /* Alineación del texto */
+}
+
+.info-texto h3 {
+    margin: 0 0 5px;
+    font-size: 1em; /* Tamaño del título ajustado */
+    font-weight: 700; /* Negrita */
+    color: #2d2d2d; /* Color negro/gris oscuro */
+}
+
+.info-texto p {
+    margin: 0;
+    font-size: 0.9em; /* Tamaño del texto ajustado */
+    color: #666; /* Color gris claro */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

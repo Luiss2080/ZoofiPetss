@@ -8,39 +8,352 @@
 
 
 
-/* CSS para la seccion de introduccion de servicios */
-.servicios-section {
-    background: linear-gradient(to bottom, #ffffff 0%, #b3d9ff 100%); /* Fondo blanco que transiciona a azul claro */
-    text-align: center; /* Alineación del texto al centro */
-    padding: 20px; /* Espaciado interno */
-  }
-
-  .servicios-section h1 {
-    color: #000066; /* Color azul oscuro para 'Nuestros servicios' */
-    margin-bottom: 0.5em; /* Espacio debajo del título */
-  }
-  
-  .servicios-section h2 {
-    color: #008080; /* Color teal para 'Su salud nos importa' */
-    margin-bottom: 1em; /* Espacio debajo del subtítulo */
-  }
-  
-  .servicios-section p {
-    color: #000066; /* Color azul oscuro para el párrafo */
-    font-size: 19px; /* Tamaño inicial de la fuente */
-  }
 
 
+      /* Animación y efecto de elevación */
+      .card {
+        width: 26rem; /* Ancho de la tarjeta */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    
+      .card:hover {
+        transform: translateY(-10px); /* Elevar tarjeta */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra */
+      }
+    
+      /* Imagen en las tarjetas */
+      .card img {
+        width: 100%; /* Ocupar todo el ancho de la tarjeta */
+        height: 220px; /* Altura de las imágenes */
+        object-fit: cover; /* Mantener proporciones de la imagen */
+      }
+    
+      /* Texto en negrita */
+      .card-text {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+    
+      /* Descripción debajo del título */
+      .card-description {
+        font-size: 1rem;
+        color: #555; /* Color gris suave */
+        margin-bottom: 1rem;
+      }
+    
+      /* Botones morados */
+      .btn-purple {
+        background-color: #6a1b9a;
+        color: white;
+        border: none;
+        padding: 0.8rem 1.2rem;
+        font-size: 1rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+      }
+    
+      .btn-purple:hover {
+        background-color: #7b1fa2;
+        transform: translateY(-3px); /* Elevar botón */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+      }
+    
+      /* Centrando tarjetas */
+      .d-flex {
+        justify-content: center;
+        align-items: center;
+      }
+    
+      /* Sombra personalizada */
+      .shadow-custom {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
 
-/* CSS para la sección de imágenes */
 
+
+
+
+/* CSS DE INTRODUCCIÓN */
 /* Estilos generales */
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: white;
+.blog-section {
+    text-align: left;
+    padding: 20px;
 }
 
-/* Estilos para la seccion de imagenes */
+/* Título del blog */
+.blog-title {
+    font-size: 36px; /* Tamaño de la letra */
+    font-weight: bold;
+    color: #232323; /* Color negro grisáceo */
+    font-family: 'Montserrat', sans-serif; /* Fuente exacta similar */
+    margin-bottom: 10px;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.blog-title:hover {
+    transform: scale(1.1); /* Aumenta el tamaño */
+    color: #0000ff; /* Cambia el color del texto al azul */
+}
+
+.blog-title::after {
+    content: '';
+    display: block;
+    width: 550px; /* Longitud de la línea */
+    height: 4px; /* Grosor de la línea */
+    background: linear-gradient(to right, #0000ff, #800080); /* Gradiente azul-morado */
+    margin-left: 450px; /* Parámetro para mover LA LINEA de izquierda a derecha */
+    margin-top: 5px;
+    transition: transform 0.3s ease; /* Transición suave para la línea */
+}
+
+.blog-title:hover::after {
+    transform: scale(1.1); /* Aumenta el tamaño de la línea */
+}
+
+/* Descripción del blog */
+.blog-description {
+    font-size: 24px; /* Tamaño exacto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #0F2C5C; /* Azul profundo */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+ /* ENLACES de los videos */
+ /* Estilos para ajustar el tamaño de los videos */
+ .tab-pane iframe {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 550px; /* Ajusta la altura según sea necesario */
+  }
+
+  /* Estilos para la imagen */
+  .image-container {
+    text-align: center; /* Centrar la imagen */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 20px; /* Espaciado inferior */
+  }
+
+  .image-container img {
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    height: auto; /* Mantener proporciones */
+    cursor: pointer; /* Indicar que se puede interactuar */
+    transition: transform 0.3s ease; /* Animación de transformación */
+  }
+
+  .image-container img:hover {
+    transform: scale(1.05); /* Aumenta la imagen un poco al pasar el mouse */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para el body y el contenedor principal que centra todo */
+body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+    background-color: #f7f7f7; /* Color de fondo suave para la página */
+    font-family: 'Roboto', sans-serif; /* Cambiar la fuente de la página */
+    display: flex; /* Habilita el modelo de diseño Flexbox */
+    flex-direction: column; /* Establece el diseño en columna */
+    overflow: hidden; /* Para evitar barras de desplazamiento no deseadas */
+  }
+  
+  /* Contenedor de la tarjeta que se va a mover de izquierda a derecha */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 20px;
+  }
+  
+  /* Estilo para el contenedor del rango */
+  .custom-container {
+    border: 2px solid rgba(128, 0, 128, 0.2); /* Borde morado más transparente */
+    padding: 30px;
+    display: inline-block; /* Hace que el contenedor tenga un tamaño ajustado al contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Animación suave cuando se levanta */
+    width: 100%; /* Permite que el contenedor ocupe el 100% del ancho disponible */
+    max-width: 900px; /* Hace que la tarjeta sea aún más ancha */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
+    margin-top: 30px; /* Asegura que tenga un pequeño margen en la parte superior */
+    position: relative; /* Permite mover la tarjeta horizontalmente */
+    left: 300px; /* Mueve la tarjeta 50px hacia la derecha */
+  }
+  
+  /* Efecto de levitar cuando el mouse pasa por encima del contenedor */
+  .custom-container:hover {
+    transform: translateY(-10px); /* Levanta el contenedor 10px al pasar el mouse */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar el efecto de "flotante" */
+  }
+  
+  /* Estilo de la etiqueta */
+  .form-label {
+    font-weight: bold;
+    color: purple; /* Color morado para el texto */
+    display: block; /* Asegura que la etiqueta ocupe toda la línea */
+    margin-bottom: 10px; /* Añade espacio entre la etiqueta y la barra de rango */
+    font-size: 24px; /* Cambiar tamaño de fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #0F2C5C; /* Azul profundo */
+    font-family: 'Roboto', sans-serif; /* Cambiar la fuente de la etiqueta */
+    text-align: center; /* Centra el texto */
+  }
+  
+  /* Estilo del input de tipo rango (barra deslizante) */
+  .form-range {
+    width: 100%; /* Hace que la barra ocupe todo el ancho disponible */
+    margin-top: 10px; /* Espacio entre la etiqueta y la barra */
+    background: rgba(128, 0, 128, 0.3); /* Fondo de la barra en morado transparente */
+    height: 8px; /* Grosor de la barra */
+    border-radius: 5px; /* Bordes redondeados */
+    outline: none; /* Quitar el borde de enfoque por defecto */
+  }
+  
+  /* Estilo del marcador (thumb) de la barra de rango */
+  .form-range::-webkit-slider-thumb {
+    background-color: purple; /* El color del marcador (thumb) será morado */
+    border-radius: 50%; /* Hacer que el marcador tenga forma redonda */
+    border: 2px solid purple; /* Borde morado alrededor del marcador */
+    width: 20px; /* Ancho del marcador */
+    height: 20px; /* Altura del marcador */
+    cursor: pointer; /* Cambiar el cursor a un puntero cuando se pase por encima */
+  }
+  
+  /* Estilo del botón de Enviar */
+  .submit-btn {
+    background-color: purple; /* Color morado para el botón */
+    color: white; /* Color de texto blanco */
+    border: none;
+    padding: 10px 20px; /* Espaciado del botón */
+    margin-top: 15px; /* Espacio entre la barra de rango y el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    width: 100%; /* Hace que el botón ocupe el 100% del ancho disponible */
+    max-width: 200px; /* Establece un máximo para el ancho del botón */
+    display: block; /* Asegura que el botón ocupe toda la fila */
+    margin-left: auto; /* Centra el botón en la fila */
+    margin-right: auto;
+    text-align: center; /* Centra el texto del botón */
+  }
+  
+  /* Efecto hover para el botón */
+  .submit-btn:hover {
+    background-color: darkviolet; /* Cambio de color cuando el mouse pasa por encima */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+/* CONTENEDOR DE 4 TARJETAS DE INFORMACION */
+.beneficios-container {
+    display: flex; /* Diseño en fila */
+    justify-content: space-between; /* Espaciado entre bloques */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre los bloques */
+    background-color: #f2fce9; /* Fondo verde claro */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Ocupa toda la página horizontalmente */
+    margin: 0 auto; /* Centrado */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+/* Estilo general de cada bloque */
+.beneficio {
+    display: flex;
+    align-items: center; /* Alinea verticalmente icono y texto */
+    gap: 10px; /* Espacio entre icono y texto */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    flex: 1; /* Bloques ajustables proporcionalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    cursor: pointer; /* Indica interactividad */
+}
+
+.beneficio:hover {
+    transform: translateY(-10px); /* Levanta el bloque */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+/* Iconos */
+.icono {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Tamaño reducido del círculo */
+    height: 80px;
+    overflow: hidden; /* Recorte dentro del círculo */
+}
+
+.icono img {
+    width: 80%; /* Imagen más pequeña dentro del círculo */
+    height: 80%;
+    object-fit: cover; /* Recorte proporcional para cubrir el círculo */
+}
+
+/* Texto */
+.texto {
+    text-align: left; /* Texto alineado a la izquierda */
+}
+
+.texto h3 {
+    margin: 0 0 5px;
+    font-size: 1em; /* Tamaño ajustado */
+    font-weight: 700; /* Negrita */
+    color: #2d2d2d; /* Negro/gris oscuro */
+}
+
+.texto p {
+    margin: 0;
+    font-size: 0.9em; /* Tamaño ajustado */
+    color: #666; /* Gris claro */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTENEDOR PARA LA SECCION DE AGRADECIMIENTOS */
+
 .movie-section {
     max-width: 1200px;
     margin: 0 auto;
@@ -50,7 +363,6 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilos para el encabezado */
 .header {
     text-align: center;
     margin-bottom: 40px;
@@ -139,36 +451,81 @@ body {
 
 
 
-/* CSS para la sección de información DE HORARIOS */
-.info-section {
-    background: linear-gradient(to bottom, #ffffff 0%, #b3d9ff 100%); /* Fondo blanco que transiciona a azul claro */
-    text-align: center; /* Alineación del texto al centro */
+
+
+
+
+/* Contenedor DE LOS DATOS FINALES */
+.informacion-container {
+    display: flex; /* Diseño en fila */
+    justify-content: space-between; /* Espaciado uniforme entre bloques */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre bloques */
+    background-color: #f2fce9; /* Fondo verde claro */
     padding: 20px; /* Espaciado interno */
-    display: flex; /* Uso de Flexbox para alinear elementos */
-    justify-content: center; /* Centrado horizontal de los elementos */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100%; /* Ocupa toda la fila horizontal */
+    margin: 0 auto; /* Centra el contenedor */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
 }
 
-.info-section > div {
-    flex: 1; /* Flexibilidad para que cada div ocupe el mismo espacio */
-    margin: 0 10px; /* Margen a los lados para separar los divs */
-    color: #000066; /* Color azul oscuro para el texto */
+/* Bloques individuales */
+.info-bloque {
+    display: flex;
+    align-items: center; /* Alineación vertical centrada */
+    gap: 10px; /* Espacio entre icono y texto */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    flex: 1; /* Bloques ajustables proporcionalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    cursor: pointer; /* Indica interactividad */
 }
 
-.info-section h1 {
-    text-transform: uppercase; /* Texto en mayúsculas */
-    font-size: 1.2em; /* Tamaño de fuente para los títulos */
-    margin-bottom: 0.5em; /* Espacio debajo del título */
+.info-bloque:hover {
+    transform: translateY(-10px); /* Efecto de levantamiento */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
-.info-section p {
-    font-size: 0.9em; /* Tamaño de fuente para el texto */
-    margin-bottom: 1em; /* Espacio debajo del párrafo */
+/* Iconos */
+.info-icono {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Tamaño del círculo */
+    height: 80px;
+    overflow: hidden; /* Recorte dentro del círculo */
 }
 
-/* Añadir una clase para el último elemento para evitar el margen derecho */
-.info-section > div:last-child {
-    margin-right: 0;
+.info-icono img {
+    width: 80%; /* Imagen más pequeña */
+    height: 80%;
+    object-fit: cover; /* Ajuste proporcional */
 }
+
+/* Texto */
+.info-texto {
+    text-align: left; /* Alineación del texto */
+}
+
+.info-texto h3 {
+    margin: 0 0 5px;
+    font-size: 1em; /* Tamaño del título ajustado */
+    font-weight: 700; /* Negrita */
+    color: #2d2d2d; /* Color negro/gris oscuro */
+}
+
+.info-texto p {
+    margin: 0;
+    font-size: 0.9em; /* Tamaño del texto ajustado */
+    color: #666; /* Color gris claro */
+}
+
+
+
 
 
 

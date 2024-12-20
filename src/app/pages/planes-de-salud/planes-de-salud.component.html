@@ -1,80 +1,69 @@
 
  <!-- Estructura para introducir a la presentacion -->
- <div style="height: 20px;"></div>
- <!-- LINEA PARA SEPARAR DESDE UNA SECCION A OTRA -->
- <div style="height: 70px;"></div>
- <div class="servicios-section">
-     <h1>-Bienvenida a Nuestros Planes de Salud para Tus Gatitos y Perritos-</h1>
-     <h2>Descubre Ofertas Fabulosas y Consejos Esenciales</h2>
-     <p>-Bienvenido a ZoofiPetsde, donde ofrecemos planes de salud exclusivos para tus gatitos. Aquí encontrarás ofertas fabulosas diseñadas para cuidar a tus amiguitos peludos. Además, podrás acceder a videos con consejos claros sobre el cuidado de tus mascotas.-</p>
-   </div>
+ <div style="height: 80px;"></div>
+ 
+<section class="blog-section">
+  <h2 class="blog-title" style="text-align: center;">¿En que etapa se encuentra tu gatito?</h2>
+  <p class="blog-description" style="text-align: center;">
 
 
 
-
-<style>
-  .card {
-    width: 28rem; /* Aumentar el ancho de las tarjetas */
-  }
-  
-  .card img {
-    width: 100%; /* Ocupar todo el ancho de la tarjeta */
-    height: 250px; /* Aumentar la altura de las imágenes */
-    object-fit: cover; /* Cubrir la tarjeta sin distorsionar la imagen */
-  }
-  
-  .card-text {
-    font-weight: bold; /* Poner en negrilla las letras */
-  }
-</style>
-
-<div class="container my-5">
-  <h2 class="text-center mb-4">¿En qué etapa está tu mascota?</h2>
-  <div class="d-flex justify-content-center">
-    <div class="card mr-3">
-      <div class="card-body text-center">
-        <p class="card-text">-Gatitos-</p>
-        <img src="gatitos.jpeg" alt="Gatito" class="img-fluid">
-        <a href="https://www.youtube.com/embed/J3NAYXXyBVI" class="btn btn-primary mt-2" target="_blank">MIRA ESTE VIDEO</a>
+    <div class="container my-4">
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="card mx-2 mb-3 shadow-custom">
+          <div class="card-body text-center">
+            <p class="card-text">-Gatitos-</p>
+            <p class="card-description">Pequeños y adorables, los gatitos conquistan corazones con su energía inagotable y su ternura.</p>
+            <img src="gatitos.jpeg" alt="Gatito" class="img-fluid">
+            <a href="https://www.youtube.com/embed/J3NAYXXyBVI" class="btn btn-purple mt-2" target="_blank">MIRA ESTE VIDEO</a>
+          </div>
+        </div>
+        <div class="card mx-2 mb-3 shadow-custom">
+          <div class="card-body text-center">
+            <p class="card-text">-Gatos Adultos-</p>
+            <p class="card-description">Elegantes e independientes, los gatos adultos ofrecen afecto y tienen personalidades únicas.</p>
+            <img src="gatosAdultos.jpeg" alt="Gato adulto" class="img-fluid">
+            <a href="https://www.youtube.com/embed/FVUQfoCAUGk" class="btn btn-purple mt-2" target="_blank">MIRA ESTE VIDEO</a>
+          </div>
+        </div>
+        <div class="card mx-2 mb-3 shadow-custom">
+          <div class="card-body text-center">
+            <p class="card-text">-Gatos Ancianos-</p>
+            <p class="card-description">Tiernos y tranquilos, los gatos ancianos siguen siendo compañeros leales en su etapa dorada.</p>
+            <img src="gatosviejos.jpg" alt="Gato senior" class="img-fluid">
+            <a href="https://www.youtube.com/embed/v00ci8BvBIE" class="btn btn-purple mt-2" target="_blank">MIRA ESTE VIDEO</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="card mx-3">
-      <div class="card-body text-center">
-        <p class="card-text">-Gatos Adultos-</p>
-        <img src="gatosAdultos.jpeg" alt="Gato adulto" class="img-fluid">
-        <a href="https://www.youtube.com/embed/FVUQfoCAUGk" class="btn btn-primary mt-2" target="_blank">MIRA ESTE VIDEO</a>
+    
+    
+
+
+
+
+
+
+<body>
+  <div class="container my-1">
+    
+<!-- ESTRUCTURA DEL FONDO DE LOS ANIMALITOS ANIMADOS -->
+      <div class="header">
+          <h1>NUESTROS PLANES DE CUIDADO PARA TU GATITO!</h1>
+        </div>
       </div>
-    </div>
-    <div class="card ml-3">
-      <div class="card-body text-center">
-        <p class="card-text">-Gatos Ancianos-</p>
-        <img src="gatosviejos.jpg" alt="Gato senior" class="img-fluid">
-        <a href="https://www.youtube.com/embed/v00ci8BvBIE" class="btn btn-primary mt-2" target="_blank">MIRA ESTE VIDEO</a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-
-  <style>
-    /* Estilos para ajustar el tamaño de los videos */
-    .tab-pane iframe {
-      width: 100%; /* Ocupa todo el ancho del contenedor */
-      height: 550px; /* Ajusta la altura según sea necesario */
-    }
-  </style>
-  <body>
-  
-  <div class="container mt-5">
-    <h1 class="text-center mb-4">Pestañas con Videos de YouTube, que te pueden interesar!!</h1>
-  
     <div class="row">
       <div class="col-4">
         <div class="list-group" id="list-tab" role="tablist">
           <a class="list-group-item list-group-item-action active" id="list-gatitos-list" data-bs-toggle="list" href="#list-gatitos" role="tab" aria-controls="list-gatitos">-Plan de Cuidado Para "Gatitos"-</a>
           <a class="list-group-item list-group-item-action" id="list-adultos-list" data-bs-toggle="list" href="#list-adultos" role="tab" aria-controls="list-adultos">-Plan de Cuidado Para "Gatos Adultos"-</a>
           <a class="list-group-item list-group-item-action" id="list-senior-list" data-bs-toggle="list" href="#list-senior" role="tab" aria-controls="list-senior">-Plan de Cuidado Para "Gatos Ancianos"-</a>
+        </div>
+        
+        <!-- Contenedor de imagen a la izquierda -->
+        <div class="image-container">
+          <img src="consejoGato.jpeg" alt="Imagen de Gatitos">
         </div>
       </div>
       <div class="col-8">
@@ -97,120 +86,205 @@
         </div>
       </div>
     </div>
-  
-  </div>
-  
+</body>
 
 
 
-<!-- Estructura para introducir a la presentacion -->
+
+
+
+<!-- SEPARACION DE SECCIÓN DE PLANES DE SALUD -->
 <div style="height: 20px;"></div>
-<!-- LINEA PARA SEPARAR DESDE UNA SECCION A OTRA -->
-<div style="height: 70px;"></div>
-<div class="servicios-section">
-    <h1>-Bienvenida a Nuestros Planes de Salud para Gatitos-</h1>
-    <h2>Descubre Ofertas Fabulosas y Consejos Claves</h2>
-    <p>-¡Bienvenido a ZoofiPetsde! Estamos emocionados de ofrecerte planes de salud diseñados específicamente para tus gatitos. Aquí encontrarás ofertas fabulosas en servicios veterinarios y productos especializados. Además, nuestros videos están llenos de consejos clave sobre el cuidado diario de tus amiguitos peludos.-</p>
-  </div>
+<!-- cierre de planes de salud para gatos -->
+<section class="blog-section">
+    <h2 class="blog-title" style="text-align: center;">LA SALUD DE TU GATITO, NUESTRO COMPROMISO</h2>
+    <p class="blog-description" style="text-align: center;">
+        En <strong>ZooFiPets</strong>, ofrecemos planes de salud especialmente diseñados para cada etapa de la vida de tu gato. 
+        <br>Desde los traviesos gatitos hasta los felinos adultos, garantizamos su bienestar con atención médica de calidad. 
+        <br><strong>¡Dale a tu gato el cuidado que se merece con nuestros planes de salud pensados para su felicidad y salud!</strong>
+    </p>
+</section>
 
-  <style>
-    .card {
-      width: 20rem; /* Aumentar el ancho de las tarjetas */
-      margin: 0 2rem; /* Aumentar el espacio entre tarjetas */
-    }
-  
-    .card img {
-      width: 100%; /* Ocupar todo el ancho de la tarjeta */
-      height: 250px; /* Aumentar la altura de las imágenes */
-      object-fit: cover; /* Cubrir la tarjeta sin distorsionar la imagen */
-    }
-  
-    .card-text {
-      font-size: 1.2rem; /* Aumentar el tamaño de la fuente */
-      font-weight: bold; /* Poner en negrilla las letras */
-    }
-  </style>
-  
-  <div class="container my-5">
-    <h2 class="text-center mb-4">¿En qué etapa está tu mascota?</h2>
-    <div class="d-flex justify-content-center">
-      <div class="card">
-        <div class="card-body text-center">
-          <p class="card-text">-Cachorros-</p>
-          <img src="cachorros.jpeg" alt="Cachorro" class="img-fluid">
-          <a href="https://youtu.be/LZ9AKsUCcTI?si=sNQrKBj0EvMMyI9H" class="btn btn-primary mt-2" target="_blank">MIRA ESTE VIDEO</a>
-        </div>
+
+
+
+
+<!-- Contenedor principal que envuelve el rango y la etiqueta -->
+<div class="custom-container">
+  <!-- Etiqueta que indica la acción de la barra de rango -->
+  <label for="customRange1" class="form-label">-Indica tu nivel de satisfacción con esta sección-</label> 
+  <!-- Barra de rango (input) -->
+  <input type="range" class="form-range" id="customRange1" min="0" max="100" step="1">
+  <!-- Botón de Enviar centrado -->
+  <button type="button" class="submit-btn">Enviar mi calificación</button>
+</div>
+
+
+
+<div class="container my-2">
+  <h2 class="blog-title" style="text-align: center;">¿En qué etapa se encuentra tu perrito?</h2>
+  <div class="d-flex justify-content-center">
+    <div class="card mx-2 mb-3 shadow-custom">
+      <div class="card-body text-center">
+        <p class="card-text">-Cachorros-</p>
+        <p class="card-description">Pequeños y curiosos, los cachorros exploran el mundo con entusiasmo, aprendiendo y creciendo.</p>
+        <img src="cachorros.jpeg" alt="Cachorro" class="img-fluid">
+        <a href="https://youtu.be/LZ9AKsUCcTI?si=sNQrKBj0EvMMyI9H" class="btn btn-purple mt-2" target="_blank">MIRA ESTE VIDEO</a>
       </div>
-      <div class="card">
-        <div class="card-body text-center">
-          <p class="card-text">-Perros Adultos-</p>
-          <img src="perrosAdultos.jpg" alt="Perro adulto" class="img-fluid">
-          <a href="https://youtu.be/7HAZ0V3AEcU?si=T2f-4Vg5QQ7n6SNw" class="btn btn-primary mt-2" target="_blank">MIRA ESTE VIDEO</a>
-        </div>
+    </div>
+    <div class="card mx-2 mb-3 shadow-custom">
+      <div class="card-body text-center">
+        <p class="card-text">-Perros Adultos-</p>
+        <p class="card-description">Los perros adultos son leales y equilibrados, ofreciendo afecto y tranquilidad a sus familias.</p>
+        <img src="perrosAdultos.jpg" alt="Perro adulto" class="img-fluid">
+        <a href="https://youtu.be/7HAZ0V3AEcU?si=T2f-4Vg5QQ7n6SNw" class="btn btn-purple mt-2" target="_blank">MIRA ESTE VIDEO</a>
       </div>
-      <div class="card">
-        <div class="card-body text-center">
-          <p class="card-text">-Perros Ancianos-</p>
-          <img src="perroadulto.jpg" alt="Perro anciano" class="img-fluid">
-          <a href="https://youtu.be/T9cBRQjfrCg?si=SfRu_QQfxaxPG6La" class="btn btn-primary mt-2" target="_blank">MIRA ESTE VIDEO</a>
-        </div>
+    </div>
+    <div class="card mx-2 mb-3 shadow-custom">
+      <div class="card-body text-center">
+        <p class="card-text">-Perros Ancianos-</p>
+        <p class="card-description">Los perros ancianos disfrutan de una vida tranquila, brindando amor y compañía con su sabiduría.</p>
+        <img src="perroadulto.jpg" alt="Perro anciano" class="img-fluid">
+        <a href="https://youtu.be/T9cBRQjfrCg?si=SfRu_QQfxaxPG6La" class="btn btn-purple mt-2" target="_blank">MIRA ESTE VIDEO</a>
       </div>
     </div>
   </div>
+</div>
 
 
 
-<!-- Estilos para ajustar el tamaño de los videos -->
-<style>
-    .tab-pane iframe {
-        width: 100%; /* Ocupa todo el ancho del contenedor */
-        height: 550px; /* Ajusta la altura según sea necesario */
-    }
-    </style>
-    
-    
-    
+
+
+
+
+
+  
+  <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Pestañas con Videos de YouTube</h1>
-    
-        <div class="row">
-            <div class="col-4">
-                <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-gatitos-list" data-bs-toggle="list" href="#list-gatitos" role="tab" aria-controls="list-gatitos">Plan de cuidado Para "cachorros"</a>
-                    <a class="list-group-item list-group-item-action" id="list-adultos-list" data-bs-toggle="list" href="#list-adultos" role="tab" aria-controls="list-adultos">Plan de cuidado Para "Perros Adultos"</a>
-                    <a class="list-group-item list-group-item-action" id="list-senior-list" data-bs-toggle="list" href="#list-senior" role="tab" aria-controls="list-senior">Plan de cuidado Para "Perros Ancianos"</a>
-                </div>
-            </div>
-            <div class="col-8">
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-gatitos" role="tabpanel" aria-labelledby="list-gatitos-list">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/LZ9AKsUCcTI" title="YouTube video" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="list-adultos" role="tabpanel" aria-labelledby="list-adultos-list">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/7HAZ0V3AEcU" title="YouTube video" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="list-senior" role="tabpanel" aria-labelledby="list-senior-list">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/T9cBRQjfrCg" title="YouTube video" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- ESTRUCTURA DEL FONDO DE LOS ANIMALITOS ANIMADOS -->
+        <div class="header">
+            <h1>NUESTROS PLANES DE SALUD PARA TU PERRITO!</h1>
+          </div>
         </div>
+  
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-gatitos-list" data-bs-toggle="list" href="#list-gatitos" role="tab" aria-controls="list-gatitos">Plan de cuidado Para "cachorros"</a>
+            <a class="list-group-item list-group-item-action" id="list-adultos-list" data-bs-toggle="list" href="#list-adultos" role="tab" aria-controls="list-adultos">Plan de cuidado Para "Perros Adultos"</a>
+            <a class="list-group-item list-group-item-action" id="list-senior-list" data-bs-toggle="list" href="#list-senior" role="tab" aria-controls="list-senior">Plan de cuidado Para "Perros Ancianos"</a>
+          </div>
+  
+          <!-- Contenedor de imagen a la izquierda -->
+          <div class="image-container">
+            <img src="consejoPerro.jpeg" alt="Imagen de Perros">
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-gatitos" role="tabpanel" aria-labelledby="list-gatitos-list">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/LZ9AKsUCcTI" title="YouTube video" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-adultos" role="tabpanel" aria-labelledby="list-adultos-list">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/7HAZ0V3AEcU" title="YouTube video" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-senior" role="tabpanel" aria-labelledby="list-senior-list">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/T9cBRQjfrCg" title="YouTube video" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+  
     
-    </div>
-    
+
+<!-- SEPARACION DE SECCIÓN DE PLANES DE SALUD -->
+<div style="height: 20px;"></div>
+<!-- cierre de planes de salud -->
+<section class="blog-section">
+    <h2 class="blog-title" style="text-align: center;">LA SALUD DE TU PERRITO ES NUESTRA PRIORIDAD</h2>
+    <p class="blog-description" style="text-align: center;">
+        En <strong>ZooFiPets</strong>, ofrecemos planes de salud diseñados para cuidar a tu perro en todas las etapas de su vida. 
+        <br>Desde cachorros hasta perros mayores, tenemos opciones para garantizar su bienestar y mantenerlos saludables y felices. 
+        <br><strong>¡Protege a tu mejor amigo con los mejores planes de salud para su tranquilidad y la tuya!</strong>
+    </p>
+</section>
 
 
 
 
-<!-- LINEA PARA SEPARAR DESDE UNA SECCION A OTRA  -->
-<div style="height: 50px;"></div>
-    <div style="height: 20px;"></div>
+<!-- Contenedor principal que envuelve el rango y la etiqueta -->
+<div class="custom-container">
+  <!-- Etiqueta que indica la acción de la barra de rango -->
+  <label for="customRange1" class="form-label">-Indica tu nivel de satisfacción con esta sección-</label> 
+  <!-- Barra de rango (input) -->
+  <input type="range" class="form-range" id="customRange1" min="0" max="100" step="1">
+  <!-- Botón de Enviar centrado -->
+  <button type="button" class="submit-btn">Enviar mi calificación</button>
+</div>
+
+
+
+
+
+
+ <!-- Estructura para introducir a la presentacion -->
+ <div style="height: 20px;"></div>
+ 
+
+<!-- CONTENEDOR DE 4 TARJETAS -->
+<div class="beneficios-container">
+  <!-- Bloque de Envíos Gratis -->
+  <div class="beneficio">
+      <div class="icono">
+          <img src="camion.jpg" alt="Icono envío gratis">
+      </div>
+      <div class="texto">
+          <h3>ENVÍOS GRATIS</h3>
+          <p>Para compras por todo Santa Cruz</p>
+      </div>
+  </div>
+  <!-- Bloque de Pagos Fáciles -->
+  <div class="beneficio">
+      <div class="icono">
+          <img src="dinero.png" alt="Icono pagos fáciles">
+      </div>
+      <div class="texto">
+          <h3>PAGOS FÁCILES</h3>
+          <p>Puede realizar los pagos por todos los medios</p>
+      </div>
+  </div>
+  <!-- Bloque de Productos de Calidad -->
+  <div class="beneficio">
+      <div class="icono">
+          <img src="caja.png" alt="Icono productos de calidad">
+      </div>
+      <div class="texto">
+          <h3>PRODUCTOS DE CALIDAD</h3>
+          <p>Contamos con los mejores productos del mercado</p>
+      </div>
+  </div>
+  <!-- Bloque de Alguna Pregunta -->
+  <div class="beneficio">
+      <div class="icono">
+          <img src="incognita.png" alt="Icono alguna pregunta">
+      </div>
+      <div class="texto">
+          <h3>¿ALGUNA PREGUNTA?</h3>
+          <p>Envíanos un mensaje y te responderemos a la brevedad</p>
+      </div>
+  </div>
+</div>
+
+
+
+
 
 
 <!-- LINEA PARA SEPARAR DESDE UNA SECCION A OTRA  -->
@@ -286,65 +360,93 @@
 </div>
 
 
-  
-            <!-- REDES SOCIALES -->
-            <div class="social-section">
-                <h2>Síguenos en todas nuestras Redes</h2>
-                <div class="social-cards">
-                    <a href="https://www.facebook.com/profile.php?id=61558517858308" target="_blank" class="social-card">
-                        <img src="facebook.webp" alt="Facebook">
-                        <div class="social-card-body">
-                            <h3>Facebook</h3>
-                            <p>ZoofiPets</p>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/zoofipetss/" target="_blank" class="social-card">
-                        <img src="Instagram.webp" alt="Instagram">
-                        <div class="social-card-body">
-                            <h3>Instagram</h3>
-                            <p>ZoofiPetss</p>
-                        </div>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=59172123456" target="_blank" class="social-card">
-                        <img src="wpps.webp" alt="WhatsApp">
-                        <div class="social-card-body">
-                            <h3>WhatsApp</h3>
-                            <p>+591 79487339</p>
-                        </div>
-                    </a>
-                    <a href="https://www.tiktok.com/@zoofipetss?lang=es" target="_blank" class="social-card">
-                        <img src="tiktok.webp" alt="TikTok">
-                        <div class="social-card-body">
-                            <h3>TikTok</h3>
-                            <p>ZoofiPetss</p>
-                        </div>
-                    </a>
-                    <a href="https://twitter.co" target="_blank" class="social-card">
-                        <img src="twitter.webp" alt="Twitter">
-                        <div class="social-card-body">
-                            <h3>Twitter</h3>
-                            <p>-ZoofiPetss-</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
 
-   <!-- PIE DE PAGINA -->
-   <style>
-    .footer {
-        position: static;
-        width: 100%;
-        background-color: #343a40;
-        color: white;
-        text-align: center;
-        padding: 10px 0;
-        font-family: Arial, sans-serif;
-    }
-</style>
-<body>
-<!-- Contenido de la página -->
 
-<div class="footer">
-    Veterinaria -ZoofiPets- es una marca registrada. © 2023-2024 Veterinaria -ZoofiPets- Todos los derechos reservados.
+
+
+
+<!-- CONTENEDOR DE 3 TARJETAS DE CIERRE -->
+<div class="informacion-container">
+  <!-- Bloque de Dirección -->
+  <div class="info-bloque">
+      <div class="info-icono">
+          <img src="ubicacion.jpg" alt="Icono ubicación">
+      </div>
+      <div class="info-texto">
+          <h3>ENCUÉNTRANOS EN</h3>
+          <p>Av. El Trompillo 300, Santa Cruz de la Sierra, Bolivia</p>
+      </div>
+  </div>
+  <!-- Bloque de Medios de Contacto -->
+  <div class="info-bloque">
+      <div class="info-icono">
+          <img src="telefono.jpg" alt="Icono teléfono">
+      </div>
+      <div class="info-texto">
+          <h3>MEDIOS DE CONTÁCTO</h3>
+          <p>Teléfono: 3-536325</p>
+          <p>Whatsapp: 760-09980</p>
+          <p>Email: Gerencia&#64;veterinarialassie.com</p>
+      </div>
+  </div>
+  <!-- Bloque de Horarios -->
+  <div class="info-bloque">
+      <div class="info-icono">
+          <img src="reloj.jpg" alt="Icono horario">
+      </div>
+      <div class="info-texto">
+          <h3>HORARIOS</h3>
+          <p>Lunes - Viernes: 08:30 - 20:00</p>
+          <p>Sábados: 09:30 - 21:30</p>
+          <p>Emergencias: 24hrs todos los días</p>
+      </div>
+  </div>
 </div>
-</body>
+
+
+
+
+
+
+
+      <!-- REDES SOCIALES -->
+      <div class="social-section">
+        <h2>Síguenos en todas nuestras Redes</h2>
+        <div class="social-cards">
+            <a href="https://www.facebook.com/profile.php?id=61558517858308" target="_blank" class="social-card">
+                <img src="facebook.webp" alt="Facebook">
+                <div class="social-card-body">
+                    <h3>Facebook</h3>
+                    <p>ZoofiPets</p>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/zoofipetss/" target="_blank" class="social-card">
+                <img src="Instagram.webp" alt="Instagram">
+                <div class="social-card-body">
+                    <h3>Instagram</h3>
+                    <p>ZoofiPets</p>
+                </div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=59172123456" target="_blank" class="social-card">
+                <img src="wpps.webp" alt="WhatsApp">
+                <div class="social-card-body">
+                    <h3>WhatsApp</h3>
+                    <p>+591 79487339</p>
+                </div>
+            </a>
+            <a href="https://www.tiktok.com/@zoofipetss?lang=es" target="_blank" class="social-card">
+                <img src="tiktok.webp" alt="TikTok">
+                <div class="social-card-body">
+                    <h3>TikTok</h3>
+                    <p>ZoofiPets</p>
+                </div>
+            </a>
+            <a href="https://twitter.co" target="_blank" class="social-card">
+                <img src="twitter.webp" alt="Twitter">
+                <div class="social-card-body">
+                    <h3>Twitter</h3>
+                    <p>-ZoofiPetss-</p>
+                </div>
+            </a>
+        </div>
+    </div>

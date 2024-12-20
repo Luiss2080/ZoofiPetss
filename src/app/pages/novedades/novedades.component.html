@@ -1,114 +1,259 @@
+<!-- Estructura de separacion -->
+<div style="height: 100px;"></div>
 
-<!-- LINEA PARA SEPARAR DESDE UNA SECCION A OTRA  -->
-<div style="height: 50px;"></div>
-    <div style="height: 20px;"></div>
-    <div class="servicios-section">
-      <h1>-Nuevos Tratamientos y Adquisiciones-</h1>
-      <p>¡Te damos la bienvenida a ZoofiPets, donde estamos emocionados de compartir nuestras últimas novedades en tratamientos y adquisiciones veterinarias! En nuestra constante búsqueda por mejorar la atención y el cuidado de tus mascotas, hemos incorporado nuevos tratamientos innovadores y hemos adquirido tecnología de vanguardia para ofrecer servicios veterinarios de calidad superior.</p>
+<!-- INTRODUCCION DE NOVEDADES -->
+<section class="blog-section">
+    <h2 class="blog-title" style="text-align: center;">¡BIENVENIDOS A LAS NOVEDADES DE ZOOFIPETS!</h2>
+    <p class="blog-description" style="text-align: center;">
+        En <strong>ZooFiPets</strong>, estamos comprometidos con mantenerte informado sobre las últimas novedades para el bienestar de tu mascota. 
+        <br>Descubre las innovaciones, consejos y actualizaciones que hemos preparado para ti y tu compañero de cuatro patas. 
+        <br><strong>¡Te invitamos a explorar nuestras novedades y a seguirnos en este camino hacia el mejor cuidado para tu mascota!</strong>
+    </p>
+</section>
+
+    <div class="container">
+      <!-- SECCIÓN DE NOVEDADES (Tarjetas de presentación de los servicios) -->
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 novedades-section"> <!-- Agregamos clase 'novedades-section' -->
+        
+        <!-- TARJETA 1: Ejercicios para bajar peso -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="bajar.png" class="card-img-top" alt="Ejercicios para bajar peso">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Ejercicios para bajar peso</h5>
+              <p class="card-text" style="text-align: center;">Zoofipets implementará un espacio para tratamiento de caninos y felinos que necesitan perder peso mediante ejercicios y talleres.</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- TARJETA 2: Servicio de Adiestramiento -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="adiestramiento.png" class="card-img-top" alt="Servicio de Adiestramiento">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Servicio de Adiestramiento</h5>
+              <p class="card-text" style="text-align: center;">Zoofipets implementará un servicio para enseñar a tus caninos y felinos a obedecer órdenes y a saber dónde ir al baño.</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- TARJETA 3: Servicio de Fisioterapia -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="fisioterapia.png" class="card-img-top" alt="Servicio de Fisioterapia">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Servicio de Fisioterapia</h5>
+              <p class="card-text" style="text-align: center;">Zoofipets implementará servicios de fisioterapia y rehabilitación para ayudar a tus mascotas a recuperar movilidad y mejorar su calidad de vida.</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- TARJETA 4: Tratamientos Urinarios -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="urinarios.png" class="card-img-top" alt="Tratamientos Urinarios">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Tratamientos Urinarios</h5>
+              <p class="card-text" style="text-align: center;">Zoofipets implementará tratamientos para combatir infecciones del tracto urinario, cálculos urinarios, enfermedad renal y problemas de vejiga.</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- TARJETA 5: Radiografías -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="radiografias.png" class="card-img-top" alt="Radiografías">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Radiografías</h5>
+              <p class="card-text" style="text-align: center;">Zoofipets se propone adquirir equipos de radiografía para ofrecer diagnósticos precisos y rápidos, garantizando el bienestar de tus mascotas.</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- TARJETA 6: Servicios a Domicilio -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="delivery.jpg" class="card-img-top" alt="Servicios a Domicilio">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Servicios a Domicilio</h5>
+              <p class="card-text" style="text-align: center;">Zoofipets lanzará un servicio móvil, llevando atención veterinaria directamente a tu puerta, para el mayor confort de tu mascota.</p>
+            </div>
+          </div>
+        </div>
+    
+      </div> <!-- Fin de la fila de tarjetas de novedades -->
+    </div> <!-- Fin del contenedor de novedades -->
+  
+    <!-- SEPARADOR ENTRE SECCIONES -->
+    <div style="height: 50px;"></div>
+
+
+<!-- Contenedor principal que envuelve el rango y la etiqueta -->
+<div class="custom-container">
+    <!-- Etiqueta que indica la acción de la barra de rango -->
+    <label for="customRange1" class="form-label">-Indica tu nivel de satisfacción con esta sección-</label> 
+    <!-- Barra de rango (input) -->
+    <input type="range" class="form-range" id="customRange1" min="0" max="100" step="1">
+    <!-- Botón de Enviar centrado -->
+    <button type="button" class="submit-btn">Enviar mi calificación</button>
+  </div>
+
+
+
+
+
+
+
+ <!-- LINEA PARA SEPARAR DESDE UNA SECCION A OTRA -->
+ <div style="height: 50px;"></div>
+
+ <!-- CENTRAR EN LA MISMA FILA -->
+ <div class="row justify-content-center">
+   <!-- TARJETA 1 -->
+   <div class="card col-md-3" style="width: 20rem; height: 25rem; transition: transform 0.3s ease-in-out;">
+     <video class="card-video" autoplay loop muted>
+       <source src="video1.mp4" type="video/mp4">
+       Tu navegador no soporta videos.
+     </video>
+     <div class="card-body">
+       <h5 class="card-title text-center" style="font-weight: bold;">- Estudios completos de caracter interno del cuerpo de tu mascota -</h5>
+       <a href="#" class="btn btn-primary w-100">Ver más</a>
+     </div>
+   </div>
+
+   <!-- TARJETA 2 -->
+   <div class="card col-md-3" style="width: 20rem; height: 25rem; transition: transform 0.3s ease-in-out;">
+     <video class="card-video" autoplay loop muted>
+       <source src="video2.mp4" type="video/mp4">
+       Tu navegador no soporta videos.
+     </video>
+     <div class="card-body">
+       <h5 class="card-title text-center" style="font-weight: bold;">- Servicios esteticos de todo tipo para hacer brillar a tu mascota -</h5>
+       <a href="#" class="btn btn-primary w-100">Ver más</a>
+     </div>
+   </div>
+
+   <!-- TARJETA 3 -->
+   <div class="card col-md-3" style="width: 20rem; height: 25rem; transition: transform 0.3s ease-in-out;">
+     <video class="card-video" autoplay loop muted>
+       <source src="video3.mp4" type="video/mp4">
+       Tu navegador no soporta videos.
+     </video>
+     <div class="card-body">
+       <h5 class="card-title text-center" style="font-weight: bold;">- Identificacion de enfermedades para el cuidado de tu mascota -</h5>
+       <a href="#" class="btn btn-primary w-100">Ver más</a>
+     </div>
+   </div>
+
+   <!-- TARJETA 4 -->
+   <div class="card col-md-3" style="width: 20rem; height: 25rem; transition: transform 0.3s ease-in-out;">
+     <video class="card-video" autoplay loop muted>
+       <source src="video4.mp4" type="video/mp4">
+       Tu navegador no soporta videos.
+     </video>
+     <div class="card-body">
+       <h5 class="card-title text-center" style="font-weight: bold;">- Rehabilitacion y seguimiento continuo del salud de tu mascota -</h5>
+       <a href="#" class="btn btn-primary w-100">Ver más</a>
+     </div>
+   </div>
+ </div>
+
+
+
+
+
+
+
+
+
+ <!-- Estructura para separar -->
+ <div style="height: 20px;"></div>
+    <section class="blog-section">
+        <h2 class="blog-title" style="text-align: center;">¿PORQUE ELEGIR A ZOOFIPETS?</h2>
+        <p class="blog-description" style="text-align: center;">
+
+
+<!-- Estructura de separacion --> 
+<div style="height: 30px;"></div>
+<!-- Contenedor principal centrado -->
+<div class="container">
+  <!-- Navbar con Scrollspy -->
+  <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light bg-body-tertiary px-3 mb-0">
+    <a class="navbar-brand" href="#scrollspyHeading1">ZooFiPets Novedades</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="nav nav-pills justify-content-center">
+        <!-- Enlaces de navegación con títulos resumidos -->
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">Tecnología en Cuidado</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Nuevas Instalaciones</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Más Novedades</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading3">Servicio de Emergencias</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading4">Bienestar Animal</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading5">Proyectos Expansión</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading6">Colaboración Internacional</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading7">Eventos y Talleres</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
+  </nav>
 
+  <!-- Contenedor de contenido Scrollspy en ventana pequeña con scroll -->
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <!-- Secciones del contenido -->
+    <h4 id="scrollspyHeading1">Tecnología en Cuidado</h4>
+    <p>En ZooFiPets hemos incorporado tecnología avanzada para monitorear la salud de las mascotas, mejorando la precisión en diagnósticos y tratamientos. Este año, hemos añadido herramientas digitales para hacer seguimiento de la salud de tus mascotas a distancia, mejorando la calidad de vida de nuestros pacientes. A través de dispositivos de última generación, podemos detectar cambios en la salud animal antes de que se conviertan en problemas serios, asegurando una atención temprana y de calidad.</p>
 
+    <h4 id="scrollspyHeading2">Nuevas Instalaciones</h4>
+    <p>ZooFiPets ha ampliado su infraestructura con nuevas y modernas instalaciones, ofreciendo un ambiente más cómodo y espacioso para las mascotas, así como mayor capacidad para atender a todos nuestros clientes con la mejor calidad y tecnología del mercado. Las nuevas instalaciones incluyen áreas de rehabilitación, salas de espera amplias, y espacios destinados exclusivamente a la atención veterinaria especializada.</p>
 
+    <h4 id="scrollspyHeading3">Servicio de Emergencias</h4>
+    <p>Este año hemos lanzado un nuevo servicio de emergencias para mascotas, disponible las 24 horas del día. Este servicio está dirigido a ofrecer atención inmediata en situaciones críticas, con un equipo especializado y equipos médicos de última generación. El servicio incluye atención de urgencias por accidentes, infecciones, y otras condiciones graves que requieran atención inmediata.</p>
 
+    <h4 id="scrollspyHeading4">Bienestar Animal</h4>
+    <p>ZooFiPets ha puesto en marcha nuevos programas de bienestar animal, que incluyen actividades de enriquecimiento y socialización para mascotas, así como programas educativos para los dueños sobre cómo mejorar la vida de sus animales. Estos programas se enfocan en la prevención de enfermedades, el bienestar mental de las mascotas y la promoción de hábitos saludables, tanto para las mascotas como para sus propietarios.</p>
 
-<!-- LINEA PARA SEPARAR DESDE UNA SECCION A OTRA  -->
-<div style="height: 50px;"></div>
-<!-- CENTRAR EN LA MISMA FILA -->
-<div class="row justify-content-center">
-<!-- TARJETA 1 -->
-<div class="card col-md-3" style="width: 18rem;">
-<img src="bajar de peso.png" class="card-img-top" alt="...">
-<!-- CENTRAR BOTON Y LETRAS -->
-<div class="card-body text-center">
-<h5 class="card-title">-Ejercicios para bajar peso-</h5>
-<p class="card-text">-Zoofipets se implentara espacio para tratamiento para caninos y felinos gordos puedan bajar de peso tanto como ejercicios y talleres-</p>
-</div>
-</div>
+    <h4 id="scrollspyHeading5">Proyectos Expansión</h4>
+    <p>ZooFiPets continúa su expansión, abriendo nuevas sucursales en varias ciudades del país. Estamos comprometidos con ofrecer nuestros servicios de alta calidad a más personas, mejorando el acceso de las mascotas a cuidados de primer nivel. Las nuevas sucursales contarán con la misma tecnología avanzada y atención especializada que nuestras instalaciones originales.</p>
 
-<!-- TARJETA 2 -->
-<div class="card col-md-3" style="width: 18rem;">
-<img src="adiestramiento.png" class="card-img-top" alt="...">
-<!-- CENTRAR BOTON Y LETRAS -->
-<div class="card-body text-center">
-<h5 class="card-title">-Servicio de Adiestramiento-</h5>
-<p class="card-text">-Zoofipets se Implementara un servicio para que tus caninos y felinos puedan obedecer ordenes y saber donde ir al baño-</p>
-</div>
-</div>
+    <h4 id="scrollspyHeading6">Colaboración Internacional</h4>
+    <p>ZooFiPets ha fortalecido su red internacional de colaboración con clínicas veterinarias de renombre mundial, compartiendo experiencias, investigaciones y desarrollos en el campo de la salud animal. Esta colaboración internacional nos permite estar a la vanguardia en el tratamiento de enfermedades y ofrecer nuevas soluciones innovadoras para el bienestar animal.</p>
 
-<!-- TARJETA 3 -->
-<div class="card col-md-3" style="width: 18rem;">
-<img src="fisioterapia.png" class="card-img-top" alt="...">
-<!-- CENTRAR BOTON Y LETRAS -->
-<div class="card-body text-center">
-<h5 class="card-title">-Servicio Fisioterapia-</h5>
-<p class="card-text">-Zoofipet se implementara Tratamientos de fisioterapia y rehabilitacion-</p>
-</div>
-</div>
-
-<!-- TARJETA 4 -->
-<div class="card col-md-3" style="width: 18rem;">
-<img src="urinarios.png" class="card-img-top" alt="...">
-<!-- CENTRAR BOTON Y LETRAS -->
-<div class="card-body text-center">
-<h5 class="card-title">-Tratamientos para problemas urinarios-</h5>
-<p class="card-text">-Zoofipets implementara un tratamiento combatir infecciones del tracto urinario, cálculos urinarios, enfermedad renal y problemas de vejiga.-</p>
-</div>
-</div>
-</div>
-
-
-
-
-
-
-<!-- LINEA PARA SEPARAR DESDE UNA SECCION A OTRA  -->
-<div style="height: 50px;"></div>
-<!-- CENTRAR EN LA MISMA FILA -->
-<div class="row justify-content-center">
-<!-- TARJETA 1 -->
-<div class="card col-md-3" style="width: 18rem;">
-  <img src="radiografias.png" class="card-img-top" alt="...">
-    <!-- CENTRAR BOTON Y LETRAS -->
-  <div class="card-body text-center">
-    <h5 class="card-title">-Radiografias-</h5>
-    <p class="card-text">-Zoofipets se pone como meta tener su equipo para tomar radiografias para tus mascotas-</p>
+    <h4 id="scrollspyHeading7">Eventos y Talleres</h4>
+    <p>ZooFiPets organiza eventos y talleres educativos sobre cuidados de mascotas, donde los dueños pueden aprender técnicas de adiestramiento, nutrición adecuada y cómo prevenir enfermedades comunes. Los talleres son impartidos por expertos veterinarios y profesionales en comportamiento animal, brindando a los participantes herramientas prácticas para mejorar la calidad de vida de sus mascotas.</p>
   </div>
 </div>
 
-<!-- TARJETA 2 -->
-<div class="card col-md-3" style="width: 18rem;">
-  <img src="eutanasia.png" class="card-img-top" alt="...">
-    <!-- CENTRAR BOTON Y LETRAS -->
-  <div class="card-body text-center">
-    <h5 class="card-title">-Servicio de eutanasia-</h5>
-    <p class="card-text">-Zoofipets se propone tener un servicio de eutanacia-</p>
-  </div>
-</div>
-
-<!-- TARJETA 3 -->
-<div class="card col-md-3" style="width: 18rem;">
-  <img src="Cremacion.png" class="card-img-top" alt="...">
-     <!-- CENTRAR BOTON Y LETRAS -->
-  <div class="card-body text-center">
-    <h5 class="card-title">-Servicio Cremacion-</h5>
-    <p class="card-text">-Zoofipet se propone a conseguir un Servicio de cremacion y venta de urnas-</p>
-  </div>
-</div>
-
-<!-- TARJETA 4 -->
-<div class="card col-md-3" style="width: 18rem;">
-  <img src="servicio a domicilio.png" class="card-img-top" alt="...">
-    <!-- CENTRAR BOTON Y LETRAS -->
-  <div class="card-body text-center">
-    <h5 class="card-title">-Servicios a domocilio-</h5>
-    <p class="card-text">-Zoofipets esta decidio a implementar un Zoopets movil!-</p>
-  </div>
-</div>
-</div>
-
- 
+  
 
 
+
+
+
+
+    <!-- FORMULARIO DE DUDASSSSSSSSSS -->
+    <div class="container my-5"> 
+        <h2 class="text-center mb-4">¿Tienes dudas? ¡Escríbelas aqui!</h2>
+        <div class="row">
+          <div class="col-12">
+            <div class="hstack gap-3 justify-content-start">
+              <input class="form-control input-animate text-box-custom" type="text" placeholder="Escribe tu duda aquí..." aria-label="Escribe tu duda aquí...">
+              <button type="button" class="btn btn-purple btn-animate btn-custom btn-enviar">Enviar</button>
+              <div class="vr separator-custom"></div>
+              <button type="button" class="btn btn-purple btn-animate btn-custom btn-reset">Restablecer</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -121,7 +266,60 @@
 
 
 <!-- LINEA PARA SEPARAR DESDE UNA SECCION A OTRA  -->
-<div style="height: 50px;"></div>
+<div style="height: 30px;"></div>
+<!-- Contenedor DE 4 TARJETAS -->
+<div class="beneficios-container">
+    <!-- Bloque de Envíos Gratis -->
+    <div class="beneficio">
+        <div class="icono">
+            <img src="camion.jpg" alt="Icono envío gratis">
+        </div>
+        <div class="texto">
+            <h3>ENVÍOS GRATIS</h3>
+            <p>Para compras por todo Santa Cruz</p>
+        </div>
+    </div>
+    <!-- Bloque de Pagos Fáciles -->
+    <div class="beneficio">
+        <div class="icono">
+            <img src="dinero.png" alt="Icono pagos fáciles">
+        </div>
+        <div class="texto">
+            <h3>PAGOS FÁCILES</h3>
+            <p>Puede realizar los pagos por todos los medios</p>
+        </div>
+    </div>
+    <!-- Bloque de Productos de Calidad -->
+    <div class="beneficio">
+        <div class="icono">
+            <img src="caja.png" alt="Icono productos de calidad">
+        </div>
+        <div class="texto">
+            <h3>PRODUCTOS DE CALIDAD</h3>
+            <p>Contamos con los mejores productos del mercado</p>
+        </div>
+    </div>
+    <!-- Bloque de Alguna Pregunta -->
+    <div class="beneficio">
+        <div class="icono">
+            <img src="incognita.png" alt="Icono alguna pregunta">
+        </div>
+        <div class="texto">
+            <h3>¿ALGUNA PREGUNTA?</h3>
+            <p>Envíanos un mensaje y te responderemos a la brevedad</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- LINEA PARA SEPARAR DESDE UNA SECCION A OTRA  -->
+<div style="height: 30px;"></div>
 <!-- ESTRUCTURA DEL FONDO DE LOS ANIMALITOS ANIMADOS -->
 <div class="page-container">
   <div class="movie-section">
@@ -198,37 +396,59 @@
 
 
 
+
+
+<!-- SECCIÓN DE 3 TARJETAS DE CIERRE -->
+<div class="informacion-container">
+    <!-- Bloque de Dirección -->
+    <div class="info-bloque">
+      <div class="info-icono">
+        <img src="ubicacion.jpg" alt="Icono ubicación">
+      </div>
+      <div class="info-texto">
+        <h3>ENCUÉNTRANOS EN</h3>
+        <p>Av. El Trompillo 300, Santa Cruz de la Sierra, Bolivia</p>
+      </div>
+    </div>
+  
+    <!-- Bloque de Medios de Contacto -->
+    <div class="info-bloque">
+      <div class="info-icono">
+        <img src="telefono.jpg" alt="Icono teléfono">
+      </div>
+      <div class="info-texto">
+        <h3>MEDIOS DE CONTÁCTO</h3>
+        <p>Teléfono: 3-536325</p>
+        <p>Whatsapp: 760-09980</p>
+        <p>Email: Gerencia&#64;veterinarialassie.com</p>
+      </div>
+    </div>
+  
+    <!-- Bloque de Horarios -->
+    <div class="info-bloque">
+      <div class="info-icono">
+        <img src="reloj.jpg" alt="Icono horario">
+      </div>
+      <div class="info-texto">
+        <h3>HORARIOS</h3>
+        <p>Lunes - Viernes: 08:30 - 20:00</p>
+        <p>Sábados: 09:30 - 21:30</p>
+        <p>Emergencias: 24hrs todos los días</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
       
 <!-- LINEA PARA SEPARAR DESDE UNA SECCION A OTRA  -->
 <div style="height: 50px;"></div>
-      <!-- SECCION DE CIERRE CON LOS DATOS RELEVANTES DE INFORMACION DE LA VETERINARIA -->
-      <div class="info-section">
-        <div>
-            <h1>-Dirección-</h1>
-            <p>Entre la Avenida 18 de Marzo y calle las flores </p>
-        </div>
-        <div>
-            <h1>-Días especiales-</h1>
-            <p>Exclusivamente los Domingos - 7:00 am - 1:00 pm</p>
-        </div>
-        <div>
-            <h1>-Horarios-</h1>
-            <p>Sin ninguna excepcion de Lunes - Sábados 7:00 am - 2:30 pm</p>
-        </div>
-        <div>
-            <h1>-Noticias-</h1>
-            <p>Vuelve a visitarnos para estar al dia con lo que sucede con la familia</p>
-        </div>
-        <div>
-            <h1>-Promociones y Ofertas-</h1>
-            <p>Todos los dias contamos con fabulosos descuentos</p>
-        </div>
-    </div>
-      
 
-
-
-  
             <!-- REDES SOCIALES -->
             <div class="social-section">
                 <h2>Síguenos en todas nuestras Redes</h2>
@@ -270,23 +490,3 @@
                     </a>
                 </div>
             </div>
-
-   <!-- PIE DE PAGINA -->
-   <style>
-    .footer {
-        position: static;
-        width: 100%;
-        background-color: #343a40;
-        color: white;
-        text-align: center;
-        padding: 10px 0;
-        font-family: Arial, sans-serif;
-    }
-</style>
-<body>
-<!-- Contenido de la página -->
-
-<div class="footer">
-    Veterinaria -ZoofiPets- es una marca registrada. © 2023-2024 Veterinaria -ZoofiPets- Todos los derechos reservados.
-</div>
-</body>
